@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application' // 이걸 구동해서 빌드해줘
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "kr.co.openit.giparang.hellowandroid"
+        minSdkVersion 15 // 최소 구동버전
+        targetSdkVersion 23 // 버전이 30이라도 23처럼 돌려줘
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar']) // 여러분 앱이 이런걸 이용할거다.
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}

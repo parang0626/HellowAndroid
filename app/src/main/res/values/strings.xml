@@ -1,0 +1,4 @@
+<resources>  <!-- 디폴트 스트링-->
+    <string name="app_name">HellowAndroid</string>
+    <string name="hi_android">hi android</string>
+</resources>

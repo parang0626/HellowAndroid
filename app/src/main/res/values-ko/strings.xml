@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?> <!--  한글을 사용할경우-->
+<resources>
+    <string name="app_name">안녕 안드로이드야</string>
+    <string name="hi_android">하이 안드로이드으</string>
+</resources>
